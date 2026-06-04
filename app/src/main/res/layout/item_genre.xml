@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="28dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/editorial_surface_variant"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <View
+            android:id="@+id/indicator"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/bg_indicator"
+            app:layout_constraintBottom_toTopOf="@id/genre_label"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/genre_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Action"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/editorial_on_surface_variant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
